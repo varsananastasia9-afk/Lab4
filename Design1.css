@@ -1,0 +1,294 @@
+/* Design1.css */
+body {
+    background-color: #010A1A; /* From Figma Primary Background */
+    color: #E0E0E0; /* Light gray body text from Figma */
+    font-family: 'Inter', sans-serif; /* Updated to Inter font family */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.custom-nav {
+    background: rgba(1, 10, 26, 0.9);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    min-height: 80px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-right .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(153, 203, 253, 0.55);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-right .nav-link:hover, 
+.nav-right .nav-link.active {
+    color: #99cbfd;
+}
+
+/* Hero Section */
+.hero-container {
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.hero-img {
+    height: 100%;
+}
+
+.hero-overlay {
+    background: linear-gradient(to right, rgba(1, 10, 26, 0.85) 0%, rgba(1, 10, 26, 0.3) 50%, rgba(1, 10, 26, 0.85) 100%);
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.main-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(80px, 11vw, 160px); /* Bigger than before */
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.fk-text {
+    color: rgba(255, 255, 255, 0.311) !important; /* Opacity fade for FK */
+}
+
+.chorno-text {
+    color: #D9D9D9;
+}
+
+.morec-text {
+    color: #4977C2;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 20px);
+    color: #a3b4e0a1; 
+    letter-spacing: 0.05em;
+    margin-top: 48px;
+}
+
+/* Hero Stats */
+.hero-stats {
+    border-right: 2px solid transparent;
+    border-image: linear-gradient(to bottom, transparent, #2d63bb 20%, #0641a0 80%, transparent) 1;
+    margin-right: 60px;
+    gap: 3.5rem !important;
+}
+
+.stat-item {
+    width: 200px;
+}
+
+.stat-number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.stat-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #A3B4E0; /* Light blue from original */
+}
+
+/* Typography elements */
+.accent-subheader {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFDC4E;
+    letter-spacing: 0.6em;
+}
+
+.tire {
+    letter-spacing: -3px;
+}
+
+.section-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
+}
+
+.text-content p {
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #E0E0E0;
+    line-height: 1.6;
+  
+}
+
+/* Imagery */
+.about-img {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+}
+
+.nav-icon {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-icon:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(211, 188, 142, 0.5));
+}
+
+.nav-icon-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7e91c3;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 3px;
+}
+
+.nav-icon-value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFDC4E;
+    margin: 0;
+}
+.site-footer {
+    background: rgba(1, 10, 26, 0.95);
+    border-top: 1px solid rgba(73, 119, 194, 0.3);
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+.footer-logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #4977C2;
+    letter-spacing: 0.1em;
+}
+
+.footer-copy {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: rgba(163, 180, 224, 0.6);
+}
+
+.footer-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgba(153, 203, 253, 0.55);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #99cbfd;
+}
+
+section:last-of-type {
+    flex: 1;
+}
+
+.contact-section {
+    border-top: 1px solid rgba(73, 119, 194, 0.15);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: #A3B4E0;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.contact-input {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(73, 119, 194, 0.3);
+    color: #E0E0E0;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    border-radius: 0;
+    padding: 0.8rem 1rem;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.contact-input:focus {
+    background: rgba(73, 119, 194, 0.08);
+    border-color: #4977C2;
+    color: #E0E0E0;
+    box-shadow: none;
+    outline: none;
+}
+
+.contact-input::placeholder {
+    color: rgba(163, 180, 224, 0.4);
+}
+
+.contact-btn {
+    background: #4977C2;
+    border: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    padding: 0.9rem 2.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    
+}
+
+.contact-btn:hover {
+    background: #3a62a8;
+}
+
+.section-header1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
