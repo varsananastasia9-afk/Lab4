@@ -285,7 +285,7 @@ section:last-of-type {
     }
 
     .about-main-title {
-        font-size: clamp(48px, 16vw, 90px);
+        font-size: clamp(40px, 15vw, 80px);
     }
 
     .about-subtitle {
@@ -314,9 +314,6 @@ section:last-of-type {
         font-size: 15px;
     }
 
-    /* --- Trophies --- */
-    /* 2 трофеї в ряд на мобілці — col-6 вже це робить,
-       тільки підправляємо розміри */
     .trophy-img {
         max-width: 80px;
         height: 100px;
