@@ -60,11 +60,11 @@ body {
     min-height: 700px;
     padding-top: 80px;
     padding-bottom: 80px;
-    position: relative;          /* потрібно щоб position:absolute картинка працювала */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;            /* обрізає картинку що виходить за межі */
+    overflow: hidden;  
 }
 
 .about-hero-top {
@@ -460,5 +460,10 @@ section:last-of-type {
 
     .footer-copy {
         font-size: 12px;
+    }
+
+    .about-hero .container-fluid {
+        justify-content: flex-start !important;
+        gap: 1.5rem;
     }
 }
