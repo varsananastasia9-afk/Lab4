@@ -19,12 +19,12 @@
                 <img class="logo" src="logo.png" alt="Logo">
                 <span class="m-0 fs-5 fw-bold text-uppercase">Чорноморець</span>
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0 custom-toggler" type="button" id="menuToggle" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-lg-5 nav-right mt-3 mt-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">ГОЛОВНА</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Untitled-1.html">ГОЛОВНА</a></li>
                     <li class="nav-item"><a class="nav-link active" href="AboutUs.html">ПРО НАС</a></li>
                     <li class="nav-item"><a class="nav-link" href="Achievements.html">ДОСЯГНЕННЯ</a></li>
                     <li class="nav-item"><a class="nav-link" href="Statisticks.html">СТАТИСТИКА МАТЧІВ</a></li>
@@ -290,6 +290,10 @@
         extra.classList.toggle('visible');
         btn.textContent = extra.classList.contains('visible') ? 'ЗГОРНУТИ' : 'ПЕРЕГЛЯНУТИ ВСІ';
     }
+    document.getElementById('menuToggle').addEventListener('click', function() {
+        var menu = document.getElementById('navbarNav');
+        menu.classList.toggle('show');
+    });
     </script>
     <footer class="site-footer">
     <div class="container-fluid px-lg-5">
