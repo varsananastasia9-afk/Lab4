@@ -305,6 +305,8 @@ section:last-of-type {
    ===================== */
 @media screen and (max-width: 576px) {
 
+
+    
     /* --- Navbar --- */
     .custom-nav {
         min-height: 64px;
@@ -335,15 +337,25 @@ section:last-of-type {
         border-bottom: none;
     }
 
-    /* --- Hero --- */
-    .about-hero {
+.about-hero {
         min-height: 100svh;
+        max-height: 100svh;
+        height: 100svh;
         padding-top: 64px;
-        padding-bottom: 40px;
+        padding-bottom: 32px;
     }
 
     .about-hero-top {
         padding-top: 2rem;
+    }
+
+    .about-hero-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-hero .container-fluid {
+        height: 100%;
     }
 
     .about-accent-label1 {
@@ -397,20 +409,24 @@ section:last-of-type {
         height: 200px;
     }
 
-    /* col-6 дає дві картки в ряд — ім'я обрізається.
-       Переводимо на одну картку в рядок */
     .col-6 {
         width: 100% !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
 
-    .player-name-bar {
-        font-size: 14px;
-        padding: 0.5rem 0.75rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+.player-name-bar {
+        background: linear-gradient(
+            to top,
+            rgba(13, 27, 62, 0.92) 0%,
+            rgba(25, 60, 120, 0.55) 70%,
+            transparent 100%
+        );
+        color: #ffffff;
+        font-size: 13px;
+        padding: 1.2rem 0.75rem 0.5rem;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+        text-decoration: none;
     }
 
     /* --- "Переглянути всі" button --- */
