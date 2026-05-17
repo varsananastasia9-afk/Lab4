@@ -1,4 +1,4 @@
-
+/* Design1.css */
 body {
     background-color: #010A1A; /* From Figma Primary Background */
     color: #E0E0E0; /* Light gray body text from Figma */
@@ -293,9 +293,13 @@ section:last-of-type {
     margin-top: 4rem;
 }
 
+/* =====================
+   MOBILE RESPONSIVE
+   ≤576px (Extra Small)
+   ===================== */
 @media screen and (max-width: 576px) {
 
-    /* Navbar */
+    /* --- Navbar --- */
     .custom-nav {
         min-height: 64px;
     }
@@ -304,19 +308,31 @@ section:last-of-type {
         height: 36px;
     }
 
-    /* Hamburger icon color fix */
-    .navbar-toggler-icon {
-        filter: invert(1);
+    /* Hamburger icon — white SVG bars */
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* Mobile dropdown menu background */
+    #navbarNav {
+        background: rgba(1, 10, 26, 0.98);
+        border-top: 1px solid rgba(73, 119, 194, 0.2);
+        padding: 0.5rem 0 1rem;
+        margin-top: 4px;
     }
 
     /* Dropdown menu items */
     .nav-right .nav-link {
         font-size: 16px;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 1.25rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    /*Hero*/
+    .nav-right .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    /* --- Hero --- */
     .hero-container {
         min-height: 100svh;
     }
@@ -336,7 +352,7 @@ section:last-of-type {
         letter-spacing: 0.04em;
     }
 
-    /* About section*/
+    /* --- About section --- */
     .accent-subheader {
         font-size: 13px;
         letter-spacing: 0.25em;
@@ -351,7 +367,7 @@ section:last-of-type {
         font-size: 15px;
     }
 
-    /*Nav Icons section*/
+    /* --- Nav Icons section --- */
     .nav-icon-label {
         font-size: 14px;
         letter-spacing: 1px;
@@ -365,7 +381,7 @@ section:last-of-type {
         max-width: 80px;
     }
 
-    /*Contact form */
+    /* --- Contact form --- */
     .section-header1 {
         font-size: 28px;
         margin-top: 2rem;
@@ -383,7 +399,7 @@ section:last-of-type {
         padding: 0.75rem 0.875rem;
     }
 
-    /* Footer*/
+    /* --- Footer --- */
     .site-footer {
         padding: 1.5rem 0;
     }
