@@ -292,3 +292,123 @@ section:last-of-type {
     margin-bottom: 4rem;
     margin-top: 4rem;
 }
+
+/* =====================
+   MOBILE RESPONSIVE
+   ≤576px (Extra Small)
+   ===================== */
+@media screen and (max-width: 576px) {
+
+    /* --- Navbar --- */
+    .custom-nav {
+        min-height: 64px;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    /* Hamburger icon color fix */
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    /* Dropdown menu items */
+    .nav-right .nav-link {
+        font-size: 16px;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* --- Hero --- */
+    .hero-container {
+        min-height: 100svh;
+    }
+
+    .hero-overlay {
+        padding-top: 64px;
+    }
+
+    .main-title {
+        font-size: clamp(56px, 18vw, 90px);
+        line-height: 1.0;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-top: 24px;
+        letter-spacing: 0.04em;
+    }
+
+    /* --- About section --- */
+    .accent-subheader {
+        font-size: 13px;
+        letter-spacing: 0.25em;
+    }
+
+    .section-header {
+        font-size: 28px;
+        margin-top: 2rem;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    /* --- Nav Icons section --- */
+    .nav-icon-label {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .nav-icon-value {
+        font-size: 24px;
+    }
+
+    .nav-icon {
+        max-width: 80px;
+    }
+
+    /* --- Contact form --- */
+    .section-header1 {
+        font-size: 28px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 15px;
+    }
+
+    .contact-input {
+        font-size: 16px; /* prevents iOS auto-zoom */
+        padding: 0.75rem 0.875rem;
+    }
+
+    /* --- Footer --- */
+    .site-footer {
+        padding: 1.5rem 0;
+    }
+
+    .site-footer .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .site-footer .col-md-4 {
+        text-align: center !important;
+    }
+
+    .footer-link {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        font-size: 13px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
+}
