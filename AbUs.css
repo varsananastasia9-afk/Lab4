@@ -348,10 +348,11 @@ section:last-of-type {
         max-height: 100svh;
         padding-top: 64px;
         padding-bottom: 32px;
+        justify-content: flex-start;
     }
 
     .about-hero-top {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     .about-accent-label1 {
