@@ -344,8 +344,6 @@ section:last-of-type {
         max-height: 100svh;
         padding-top: 64px;
         padding-bottom: 32px;
-        justify-content: center;
-        gap: 2rem; 
     }
 
     .about-hero-top {
@@ -354,7 +352,7 @@ section:last-of-type {
 
     .about-accent-label1 {
         font-size: 13px;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .about-main-title {
