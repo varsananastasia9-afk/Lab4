@@ -299,3 +299,143 @@ margin-top: 4rem;
 section:last-of-type {
     flex: 1;
 }
+/* =====================
+   MOBILE RESPONSIVE
+   ≤576px (Extra Small)
+   ===================== */
+@media screen and (max-width: 576px) {
+
+    /* --- Navbar --- */
+    .custom-nav {
+        min-height: 64px;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    #navbarNav {
+        background: rgba(1, 10, 26, 0.98);
+        border-top: 1px solid rgba(73, 119, 194, 0.2);
+        padding: 0.5rem 0 1rem;
+        margin-top: 4px;
+    }
+
+    .nav-right .nav-link {
+        font-size: 16px;
+        padding: 0.75rem 1.25rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-right .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    /* --- Hero --- */
+    .about-hero {
+        min-height: 100svh;
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+
+    .about-hero-top {
+        padding-top: 2rem;
+    }
+
+    .about-accent-label1 {
+        font-size: 13px;
+        margin-bottom: 2rem;
+    }
+
+    .about-main-title {
+        font-size: clamp(56px, 18vw, 100px);
+    }
+
+    .about-subtitle {
+        font-size: 13px;
+        margin-top: 1.5rem;
+        letter-spacing: 0.08em;
+    }
+
+    .about-hero-bg-text {
+        display: none;
+    }
+
+    /* --- Sections --- */
+    .about-accent-label {
+        font-size: 13px;
+        letter-spacing: 0.2em;
+    }
+
+    .section-header {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .vorotar {
+        font-size: 26px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .zahisnik {
+        font-size: 26px;
+        margin-bottom: 1.5rem;
+    }
+
+    /* --- Player cards --- */
+    .player-card {
+        width: 100%;
+        height: 220px;
+    }
+
+    .player-name-bar {
+        font-size: 13px;
+        padding: 0.4rem 0.5rem;
+    }
+
+    /* --- "Переглянути всі" button ---
+       На мобілці прибираємо absolute позицію,
+       показуємо кнопку під картками як звичайний блок */
+    .players-wrapper {
+        padding-right: 0;
+    }
+
+    .btn-show-more {
+        position: static !important;
+        transform: none;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        font-size: 15px;
+    }
+
+    /* --- Footer --- */
+    .site-footer .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .site-footer .col-md-4 {
+        text-align: center !important;
+    }
+
+    .footer-link {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
+}
