@@ -239,10 +239,6 @@ section:last-of-type {
     flex: 1;
 }
 
-/* =====================
-   MOBILE RESPONSIVE
-   ≤576px (Extra Small)
-   ===================== */
 @media screen and (max-width: 576px) {
 
     /* --- Navbar --- */
@@ -286,7 +282,6 @@ section:last-of-type {
 
     .about-accent-label2 {
         font-size: 13px;
-        margin-bottom: 2rem;
     }
 
     .about-main-title {
@@ -295,7 +290,6 @@ section:last-of-type {
 
     .about-subtitle {
         font-size: 13px;
-        margin-top: 1.5rem;
         letter-spacing: 0.08em;
     }
 
