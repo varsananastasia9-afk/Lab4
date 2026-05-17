@@ -1,7 +1,7 @@
 body {
-    background-color: #01001A; /* From Figma Primary Background */
-    color: #E0E0E0; /* Light gray body text from Figma */
-    font-family: 'Inter', sans-serif; /* Updated to Inter font family */
+    background-color: #01001A;
+    color: #E0E0E0;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -33,81 +33,42 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-right .nav-link:hover, 
+.nav-right .nav-link:hover,
 .nav-right .nav-link.active {
     color: #99cbfd;
 }
 
 /* Hero Section */
-.hero-container {
-    height: 100vh;
-    min-height: 700px;
-    overflow: hidden;
-}
-
-.hero-img {
-    height: 100%;
-}
-
-.hero-overlay {
-    background: linear-gradient(to right, rgba(1, 10, 26, 0.85) 0%, rgba(1, 10, 26, 0.3) 50%, rgba(1, 10, 26, 0.85) 100%);
-    padding-top: 80px; /* Offset for fixed navbar */
-}
-/* About Hero */
 .about-hero {
     height: 100vh;
     min-height: 700px;
     padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 80px;
 }
 
 .about-hero-top {
     padding-top: 5rem;
 }
 
-.about-accent-label2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFDC4E;
-    margin-bottom: 6rem;
+.about-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 
-.about-accent-label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFDC4E;
-    letter-spacing: 0.6em;
-    margin-top: 2em;
-     margin-bottom: 2em;
-}
-
-.about-accent-label1{
-        font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFDC4E;
-    letter-spacing: 0.6em;
-    margin-top: 4em;
-     margin-bottom: 2em;
-}
-
-.about-tire {
-    letter-spacing: -3px;
-    color: rgb(155, 162, 162);
-}
-
-.about-main-title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: clamp(80px, 11vw, 200px);
-    line-height: 0.9;
-    letter-spacing: -0.02em;
-    margin: 0;
+.about-hero .container-fluid {
+    position: relative;
+    z-index: 1;
 }
 
 .about-hero-bg-text {
@@ -125,6 +86,15 @@ body {
     letter-spacing: 0.2em;
 }
 
+.about-main-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(80px, 11vw, 200px);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
 .about-pro-text {
     color: #D9D9D9;
 }
@@ -132,7 +102,6 @@ body {
 .about-club-text {
     color: #4977C2;
 }
-
 
 .about-subtitle {
     font-family: 'Inter', sans-serif;
@@ -143,28 +112,40 @@ body {
     margin-top: 4rem;
 }
 
-.about-hero-img {
-    height: 100%;
-    z-index: 0;
-
+.about-accent-label2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFDC4E;
+    margin-bottom: 6rem;
 }
 
-.about-hero .container-fluid {
-    position: relative;
-    z-index: 1;
+.about-accent-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFDC4E;
+    letter-spacing: 0.6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
+.about-tire {
+    letter-spacing: -3px;
+    color: rgb(155, 162, 162);
+}
+
+/* Content sections */
 .section-header {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #FFFFFF;
-
     margin-bottom: 2rem;
 }
 
 .about-section-wrapper {
-    margin-top: 0 !important; 
+    margin-top: 0 !important;
     padding-top: 2rem !important;
 }
 
@@ -176,7 +157,6 @@ body {
     line-height: 1.6;
     font-size: 20px;
 }
-
 
 /* Trophies */
 .trophy-card {
@@ -218,6 +198,7 @@ body {
     line-height: 1.4;
 }
 
+/* Footer */
 .site-footer {
     background: rgba(1, 10, 26, 0.95);
     border-top: 1px solid rgba(73, 119, 194, 0.3);
@@ -256,4 +237,127 @@ body {
 
 section:last-of-type {
     flex: 1;
+}
+
+/* =====================
+   MOBILE RESPONSIVE
+   ≤576px (Extra Small)
+   ===================== */
+@media screen and (max-width: 576px) {
+
+    /* --- Navbar --- */
+    .custom-nav {
+        min-height: 64px;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    #navbarNav {
+        background: rgba(1, 10, 26, 0.98);
+        border-top: 1px solid rgba(73, 119, 194, 0.2);
+        padding: 0.5rem 0 1rem;
+        margin-top: 4px;
+    }
+
+    .nav-right .nav-link {
+        font-size: 16px;
+        padding: 0.75rem 1.25rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-right .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    /* --- Hero --- */
+    .about-hero {
+        height: 100svh;
+        min-height: 100svh;
+        max-height: 100svh;
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
+
+    .about-hero-top {
+        padding-top: 2rem;
+    }
+
+    .about-accent-label2 {
+        font-size: 13px;
+        margin-bottom: 2rem;
+    }
+
+    .about-main-title {
+        font-size: clamp(48px, 16vw, 90px);
+    }
+
+    .about-subtitle {
+        font-size: 13px;
+        margin-top: 1.5rem;
+        letter-spacing: 0.08em;
+    }
+
+    .about-hero-bg-text {
+        display: none;
+    }
+
+    /* --- Sections --- */
+    .about-accent-label {
+        font-size: 13px;
+        letter-spacing: 0.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .section-header {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    /* --- Trophies --- */
+    /* 2 трофеї в ряд на мобілці — col-6 вже це робить,
+       тільки підправляємо розміри */
+    .trophy-img {
+        max-width: 80px;
+        height: 100px;
+    }
+
+    .trophy-name {
+        font-size: 12px;
+    }
+
+    .trophy-year {
+        font-size: 14px;
+    }
+
+    .row.g-5 {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 2rem;
+    }
+
+    /* --- Footer --- */
+    .site-footer .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .site-footer .col-md-4 {
+        text-align: center !important;
+    }
+
+    .footer-link {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
 }
