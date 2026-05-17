@@ -293,10 +293,6 @@ section:last-of-type {
     margin-top: 4rem;
 }
 
-/* =====================
-   MOBILE RESPONSIVE
-   ≤576px (Extra Small)
-   ===================== */
 @media screen and (max-width: 576px) {
 
     /* --- Navbar --- */
