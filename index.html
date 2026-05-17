@@ -6,16 +6,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ФК Чорноморець</title>
-    
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="Design1.css">
 </head>
 <body>
@@ -26,7 +20,7 @@
                 <img class="logo" src="logo.png" alt="Logo">
                 <span class="m-0 fs-5 fw-bold text-uppercase">Чорноморець</span>
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -97,7 +91,7 @@
                     <p>За роки існування «Чорноморець» досяг значних успіхів у футболі. У радянський період команда здобула бронзові медалі чемпіонату СРСР, а в незалежній Україні стала двічі срібним призером чемпіонату України та володарем Кубка України.</p>
                     <p>На сьогодні основний склад команди налічує близько 29 футболістів, які представляють різні позиції: воротарі, захисники, півзахисники та нападники. До складу також входять тренерський штаб та молоді гравці клубної академії.</p>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <img src="command.jpg" alt="Team" class="img-fluid rounded w-100 about-img">
                 </div>
             </div>
@@ -108,82 +102,80 @@
     <div class="navigat-section py-5 my-5">
         <div class="container px-lg-5">
             <div class="row justify-content-center text-center g-5 align-items-end">
-<div class="col-6 col-md-3">
-    <img class="nav-icon" src="blocnot.png" alt="Blocnot">
-    <p class="nav-icon-label">Рік заснування:</p>
-    <p class="nav-icon-value">1936</p>
-</div>
-<div class="col-6 col-md-3">
-    <img class="nav-icon" src="location.png" alt="Location">
-    <p class="nav-icon-label">Місто:</p>
-    <p class="nav-icon-value">Одеса</p>
-</div>
-<div class="col-6 col-md-3">
-    <img class="nav-icon" src="stadion.png" alt="Stadion">
-    <p class="nav-icon-label">Стадіон:</p>
-    <p class="nav-icon-value">Чорноморець</p>
-</div>
-<div class="col-6 col-md-3">
-    <img class="nav-icon" src="cuboc.png" alt="Cup">
-    <p class="nav-icon-label">Прем'єр-ліга:</p>
-    <p class="nav-icon-value">України</p>
-</div>
+                <div class="col-6 col-md-3">
+                    <img class="nav-icon" src="blocnot.png" alt="Blocnot">
+                    <p class="nav-icon-label">Рік заснування:</p>
+                    <p class="nav-icon-value">1936</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="nav-icon" src="location.png" alt="Location">
+                    <p class="nav-icon-label">Місто:</p>
+                    <p class="nav-icon-value">Одеса</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="nav-icon" src="stadion.png" alt="Stadion">
+                    <p class="nav-icon-label">Стадіон:</p>
+                    <p class="nav-icon-value">Чорноморець</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="nav-icon" src="cuboc.png" alt="Cup">
+                    <p class="nav-icon-label">Прем'єр-ліга:</p>
+                    <p class="nav-icon-value">України</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
- <!-- Contact Form Section -->
+    <!-- Contact Form Section -->
     <section class="contact-section py-5">
         <div class="container px-lg-5">
             <div class="row mb-4">
                 <div class="col-12">
                     <h2 class="section-header1 text-uppercase text-center text-white">Написати нам</h2>
                 </div>
+            </div>
             <div class="row">
                 <div class="col-lg-6 mx-auto">
                     <form action="#" method="POST" class="contact-form">
                         <div class="mb-4">
                             <label for="name" class="form-label contact-label">Ваше ім'я</label>
-                          <input type="text" class="form-control contact-input" id="name" name="name" placeholder="Введіть ім'я" autocomplete="name" required>
+                            <input type="text" class="form-control contact-input" id="name" name="name" placeholder="Введіть ім'я" autocomplete="name" required>
+                        </div>
                         <div class="mb-4">
                             <label for="email" class="form-label contact-label">Email</label>
-                          <input type="email" class="form-control contact-input" id="email" name="email" placeholder="Введіть email" autocomplete="email" required>
+                            <input type="email" class="form-control contact-input" id="email" name="email" placeholder="Введіть email" autocomplete="email" required>
                         </div>
                         <div class="mb-4">
                             <label for="message" class="form-label contact-label">Повідомлення</label>
                             <textarea class="form-control contact-input" id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
                         </div>
                         <div class="text-center">
-                        <button type="submit" class="contact-btn">ВІДПРАВИТИ</button>
-</div>
+                            <button type="submit" class="contact-btn">ВІДПРАВИТИ</button>
+                        </div>
                     </form>
                 </div>
             </div>
-                        </div>
-            </div>
+        </div>
     </section>
 
-<footer class="site-footer">
-    <div class="container-fluid px-lg-5">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <span class="footer-logo-text">ФК ЧОРНОМОРЕЦЬ</span>
-            </div>
-            <div class="col-md-4 text-center">
-                <span class="footer-copy">© 2025 Чорноморець Одеса. Всі права захищені.</span>
-            </div>
-            <div class="col-md-4 text-end">
-                <a href="Untitled-1.html" class="footer-link">Головна</a>
-                <a href="AboutUs.html" class="footer-link">Про нас</a>
-                <a href="Achievements.html" class="footer-link">Досягнення</a>
+    <footer class="site-footer">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <span class="footer-logo-text">ФК ЧОРНОМОРЕЦЬ</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="footer-copy">© 2025 Чорноморець Одеса. Всі права захищені.</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="index.html" class="footer-link">Головна</a>
+                    <a href="AboutUs.html" class="footer-link">Про нас</a>
+                    <a href="Achievements.html" class="footer-link">Досягнення</a>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
-
 </body>
 </html>
