@@ -19,9 +19,12 @@
                 <img class="logo" src="logo.png" alt="Logo">
                 <span class="m-0 fs-5 fw-bold text-uppercase">Чорноморець</span>
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler custom-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-lg-5 nav-right mt-3 mt-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">ГОЛОВНА</a></li>
@@ -36,7 +39,7 @@
     <section class="about-hero position-relative">
         <div class="about-hero-bg-text">ФК</div>
         <img class="about-hero-img w-100 object-fit-cover position-absolute top-0 start-0" src="photo_2026-05-09_00-29-39.jpg" alt="bg">
-        <div class="container-fluid h-100 px-lg-5 d-flex flex-column justify-content-between">
+        <div class="container-fluid h-100 px-lg-5 d-flex flex-column justify-content-center">
             <div class="about-hero-top">
                 <p class="about-accent-label2 text-uppercase"><span class="about-tire">———</span> &nbsp;&nbsp; ДОСЯГНЕННЯ</p>
             </div>
@@ -167,11 +170,6 @@
     </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-    document.getElementById('menuToggle').addEventListener('click', function() {
-        var menu = document.getElementById('navbarNav');
-        menu.classList.toggle('show');
-    });
-</script>
+
 </body>
 </html>
