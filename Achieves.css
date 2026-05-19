@@ -239,6 +239,14 @@ section:last-of-type {
     flex: 1;
 }
 
+.footer-phone {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #99cbfd;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 576px) {
 
     /* --- Navbar --- */
