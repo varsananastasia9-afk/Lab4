@@ -273,7 +273,7 @@ section:last-of-type {
         min-height: 100svh;
         max-height: 100svh;
         padding-top: 64px;
-        padding-bottom: 32px;
+     
         justify-content: center;
         gap: 2rem;
     }
@@ -288,7 +288,7 @@ section:last-of-type {
     }
 
     .about-main-title {
-        font-size: clamp(40px, 15vw, 80px);
+        font-size: clamp(38px, 14vw, 75px);
     }
 
     .about-subtitle {
