@@ -250,13 +250,17 @@ section:last-of-type {
         height: 36px;
     }
 
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
     #navbarNav {
         background: rgba(1, 10, 26, 0.98);
         border-top: 1px solid rgba(73, 119, 194, 0.2);
         padding: 0.5rem 0 1rem;
         margin-top: 4px;
     }
-
+    
     .nav-right .nav-link {
         font-size: 16px;
         padding: 0.75rem 1.25rem;
@@ -279,13 +283,13 @@ section:last-of-type {
     overflow: hidden;
 }
 
-      .about-hero-top {
+    .about-hero-top {
         padding-top: 1rem;
     }
 
     .about-accent-label2 {
         font-size: 13px;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .about-main-title {
