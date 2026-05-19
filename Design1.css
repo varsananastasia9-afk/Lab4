@@ -293,6 +293,14 @@ section:last-of-type {
     margin-top: 4rem;
 }
 
+    .footer-phone {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #99cbfd;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 576px) {
 
     /* --- Navbar --- */
@@ -420,11 +428,5 @@ section:last-of-type {
         font-size: 12px;
     }
 
-    .footer-phone {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #99cbfd;
-    text-decoration: none;
-}
+
 }
