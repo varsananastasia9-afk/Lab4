@@ -268,24 +268,24 @@ section:last-of-type {
     }
 
     /* --- Hero --- */
-    .about-hero {
-        height: 100svh;
-        min-height: 100svh;
-        max-height: 100svh;
-        padding-top: 64px;
-        padding-bottom: 32px;
-        justify-content: center;
-        gap: 0.5rem;
-    }
+ .about-hero {
+    min-height: 75vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
 
-    .about-hero-top {
-        padding-top: 0.5rem;
-        margin-bottom: 0;
+      .about-hero-top {
+        padding-top: 1rem;
     }
 
     .about-accent-label2 {
         font-size: 13px;
-         margin-bottom: 3rem;
+        margin-bottom: 10rem;
     }
 
     .about-main-title {
@@ -294,6 +294,7 @@ section:last-of-type {
 
     .about-subtitle {
         font-size: 13px;
+        margin-top: 0.5rem;
         letter-spacing: 0.08em;
     }
 
