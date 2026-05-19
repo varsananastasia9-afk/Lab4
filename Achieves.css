@@ -289,12 +289,12 @@ section:last-of-type {
 }
 
     .about-hero-top {
-        padding-top: 0.5rem;
+        padding-top: 1rem;
     }
 
     .about-accent-label2 {
         font-size: 13px;
-        margin-bottom: 0rem;
+        margin-bottom: 10rem;
     }
 
     .about-main-title {
