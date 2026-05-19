@@ -283,6 +283,11 @@ section:last-of-type {
     overflow: hidden;
 }
 
+    .about-hero .container-fluid {
+    justify-content: center !important;
+    gap: 2rem;
+}
+
     .about-hero-top {
         padding-top: 1rem;
     }
